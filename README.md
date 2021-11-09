@@ -1,2 +1,2 @@
 # simple-chat
-websocket/socket.io in react chat app
+websocket/socket.io - chat app
