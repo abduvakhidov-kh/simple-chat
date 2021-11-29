@@ -1,4 +1,5 @@
 //Make connection
+var port = process.env.PORT || 3000
 
 var socket = io.connect("http://localhost:4000");
 
@@ -25,7 +26,7 @@ message.addEventListener("keypress", function () {
 
 //Listen for events
 socket.on("chat", function (data) {
-  feedback.innerHTML = "git ";
+  // feedback.innerHTML = "git ";
   output.innerHTML +=
     "<p><strong>" + data.handle + ":</strong>" + data.message + "</p>";
 });
